@@ -15,7 +15,7 @@ import static steps.BeforeAndAfterSteps.getDriver;
 
 public class BasePage {
 
-    protected WebDriver     driver;
+    protected WebDriver driver;
     protected Configuration config;
     protected WebDriverWait wait;
 
@@ -79,9 +79,7 @@ public class BasePage {
             element.clear();
             element.sendKeys(text);
 
-            if (pressEnter) {
-                element.sendKeys(Keys.ENTER);
-            }
+            if (pressEnter) element.sendKeys(Keys.ENTER);
         }
     }
 
